@@ -4,8 +4,7 @@ Use an LLM to create keywords that describe images. View those images, and filte
 This script can be used in two ways. First, to create a list of keywords that describe
 images, along with a RANK and an SHA-256 hash code. For example:
 
-C:\Files\image.png,ancient,art,bust,classical,detail,expression,face,head,historical,light,male,marble,monochrome,neutral,
-photo,portrait,RANK 8,Roman,sculpture,shadow,stone,texture,08012ea05a64aee1d59d415cca109fe6d1f933412cbaf15a1c55b8b65fd5181b
+C:\Files\image.png,ancient,art,bust,classical,detail,expression,face,head,historical,light,male,marble,monochrome,neutral,photo,portrait,RANK 8,Roman,sculpture,shadow,stone,texture,08012ea05a64aee1d59d415cca109fe6d1f933412cbaf15a1c55b8b65fd5181b
 
 Second, if you provide a text file with one of those entries per line, the script displays a UI that lets you
 filter the images by keywords or RANK, and display them.
