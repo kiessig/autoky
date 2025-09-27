@@ -16,18 +16,22 @@ are: jpg, jpeg, png, gif, webbp, bmp, tif, and tiff.
 Before running the app, you should have a vision-capable LLM running on http://localhost:11434. The script
 was developed and tested using gemma3:12b on ollama.
 
-The keywords are displayed on stdout. Just redirect to a file if you want to use them later, or for viewing.
+The keywords are displayed on stdout. Just redirect to a file if you want to use them later, or for viewing:
+
+python autoky.py C:\Files F:\Images *.png > key.txt
 
 Filenames in the CSV are absolute, so the CSV doesn't have to be in the same folder as the images in order to view the images.
 
 For viewing, invoke the script with one or more txt files containing CSV keywords in the format above, one image per line.
 The script will identify and not display duplicates, based on the SHA-256 hash code. The UI shows how many duplicates were
-identified.
+identified:
+
+python autoky.py key.txt key2.txt
 
 In the UI, you can specify multiple keywords by separating them with commas.
 
 You may want to modify the prompt that tells the LLM how to generate keywords and ranks, and/or the URL to access the LLM
-and the model used. All of those parameters are located near the beginning of the file.
+and the model used. All of those parameters are located near the beginning of autoky.py.
 
 NOTE: this code was AI-generated. I provided the prompts to generate the code and the keywords, but not the coding style.
 
