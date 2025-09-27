@@ -30,3 +30,5 @@ You may want to modify the prompt that tells the LLM how to generate keywords an
 and the model used. All of those parameters are located near the beginning of the file.
 
 NOTE: this code was AI-generated. I provided the prompts to generate the code and the keywords, but not the coding style.
+
+<img width="2088" height="1384" alt="image" src="https://github.com/user-attachments/assets/8c0cae4c-0b47-47b5-8309-090fb99ed67c" />
